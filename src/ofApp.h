@@ -1,14 +1,24 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxDlib.h"
+#include "ofxOpenCv.h"
 
 class ofApp : public ofBaseApp{
 private:
   ofVideoGrabber _videoGrabber;
+  ofxCvColorImage _img_Color;
+  ofxCvGrayscaleImage _img_Gray;
+  ofxCvContourFinder _contourFinder;
   ofPixels _videoPixles;
   ofTexture _videoTexture;
   int _camWidth;
   int _camHeight;
+
+  std::vector<dlib::rectangle> _faceRects;
+  dlib::frontal_face_detector _faceDetector;
+  dlib::shape_predictor _shapePredictor;
+  std::vector<dlib::full_object_detection> shapes;
 
 public:
   void setup();

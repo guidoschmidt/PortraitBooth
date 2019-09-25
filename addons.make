@@ -1,1 +1,3 @@
 ofxDatGui
+ofxDlib
+ofxOpenCv
