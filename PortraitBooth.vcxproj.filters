@@ -7,10 +7,37 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
+		<ClCompile Include="src\BackgroundPainter.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\FaceDescriptor.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\FacePainter _Drawing.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\FacePainter.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
 		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\painters\MeshPainter.cpp">
+			<Filter>src\painters</Filter>
+		</ClCompile>
+		<ClCompile Include="src\painters\OilPainter.cpp">
+			<Filter>src\painters</Filter>
+		</ClCompile>
+		<ClCompile Include="src\painters\Painter.cpp">
+			<Filter>src\painters</Filter>
+		</ClCompile>
+		<ClCompile Include="src\painters\PointillismPainter.cpp">
+			<Filter>src\painters</Filter>
+		</ClCompile>
+		<ClCompile Include="src\Paintstroke.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
 		<ClCompile Include="..\..\addons\ofxDatGui\src\core\ofxDatGuiComponent.cpp">
@@ -27,6 +54,18 @@
 		</ClCompile>
 		<ClCompile Include="..\..\addons\ofxDlib\libs\ofxDlib\src\Utils.cpp">
 			<Filter>addons\ofxDlib\libs\ofxDlib\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\addons\ofxOilPaint\src\ofxOilBristle.cpp">
+			<Filter>addons\ofxOilPaint\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\addons\ofxOilPaint\src\ofxOilBrush.cpp">
+			<Filter>addons\ofxOilPaint\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\addons\ofxOilPaint\src\ofxOilSimulator.cpp">
+			<Filter>addons\ofxOilPaint\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\addons\ofxOilPaint\src\ofxOilTrace.cpp">
+			<Filter>addons\ofxOilPaint\src</Filter>
 		</ClCompile>
 		<ClCompile Include="..\..\addons\ofxOpenCv\src\ofxCvColorImage.cpp">
 			<Filter>addons\ofxOpenCv\src</Filter>
@@ -49,10 +88,16 @@
 		<ClCompile Include="..\..\addons\ofxOpenCv\src\ofxCvShortImage.cpp">
 			<Filter>addons\ofxOpenCv\src</Filter>
 		</ClCompile>
+		<ClCompile Include="..\..\addons\ofxPoissonDiskSampling\src\ofxPoissonDiskSampling.cpp">
+			<Filter>addons\ofxPoissonDiskSampling\src</Filter>
+		</ClCompile>
 	</ItemGroup>
 	<ItemGroup>
 		<Filter Include="src">
 			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\painters">
+			<UniqueIdentifier>{884F9462-CE09-CE06-1B86-01A2}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons">
 			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
@@ -119,6 +164,12 @@
 		</Filter>
 		<Filter Include="addons\ofxDlib\libs\ofxDlib\src">
 			<UniqueIdentifier>{7F7D6FFC-8777-C5BD-C6BE-737E}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOilPaint">
+			<UniqueIdentifier>{5CB7AE4E-742C-5841-1223-D23F}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOilPaint\src">
+			<UniqueIdentifier>{5234C609-90FE-FB54-BA7C-8747}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxOpenCv">
 			<UniqueIdentifier>{FFA81411-43B9-BD99-75AF-1DC3}</UniqueIdentifier>
@@ -261,12 +312,54 @@
 		<Filter Include="addons\ofxOpenCv\libs\opencv\include\opencv2\videoio\legacy">
 			<UniqueIdentifier>{01B554B2-7143-F97F-EB04-9763}</UniqueIdentifier>
 		</Filter>
+		<Filter Include="addons\ofxPoissonDiskSampling">
+			<UniqueIdentifier>{D83B7F40-C289-297D-BFB8-2596}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPoissonDiskSampling\src">
+			<UniqueIdentifier>{999DB251-684D-68A1-8BF2-9D00}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPoissonDiskSampling\libs">
+			<UniqueIdentifier>{484D8E5D-9A9F-6BAA-9B1F-876A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPoissonDiskSampling\libs\poissondisksampling">
+			<UniqueIdentifier>{FB8109C7-F3A6-93DA-32E5-A484}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPoissonDiskSampling\libs\poissondisksampling\include">
+			<UniqueIdentifier>{B525DEC9-06C2-5364-6D5F-99F7}</UniqueIdentifier>
+		</Filter>
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
+		<ClInclude Include="src\BackgroundPainter.hpp">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\FaceDescriptor.hpp">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\FacePainter.hpp">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\FacePainter_Drawing.hpp">
+			<Filter>src</Filter>
+		</ClInclude>
 		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\painters\MeshPainter.h">
+			<Filter>src\painters</Filter>
+		</ClInclude>
+		<ClInclude Include="src\painters\OilPainter.h">
+			<Filter>src\painters</Filter>
+		</ClInclude>
+		<ClInclude Include="src\painters\Painter.h">
+			<Filter>src\painters</Filter>
+		</ClInclude>
+		<ClInclude Include="src\painters\PointillismPainter.h">
+			<Filter>src\painters</Filter>
+		</ClInclude>
+		<ClInclude Include="src\Paintstroke.hpp">
 			<Filter>src</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\addons\ofxDatGui\src\components\ofxDatGui2dPad.h">
@@ -355,6 +448,21 @@
 		</ClInclude>
 		<ClInclude Include="..\..\addons\ofxDlib\libs\ofxDlib\include\ofx\Dlib\Utils.h">
 			<Filter>addons\ofxDlib\libs\ofxDlib\include\ofx\Dlib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\addons\ofxOilPaint\src\ofxOilBristle.h">
+			<Filter>addons\ofxOilPaint\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\addons\ofxOilPaint\src\ofxOilBrush.h">
+			<Filter>addons\ofxOilPaint\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\addons\ofxOilPaint\src\ofxOilPaint.h">
+			<Filter>addons\ofxOilPaint\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\addons\ofxOilPaint\src\ofxOilSimulator.h">
+			<Filter>addons\ofxOilPaint\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\addons\ofxOilPaint\src\ofxOilTrace.h">
+			<Filter>addons\ofxOilPaint\src</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\addons\ofxOpenCv\src\ofxCvBlob.h">
 			<Filter>addons\ofxOpenCv\src</Filter>
@@ -1234,6 +1342,21 @@
 		</ClInclude>
 		<ClInclude Include="..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\world.hpp">
 			<Filter>addons\ofxOpenCv\libs\opencv\include\opencv2</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\addons\ofxPoissonDiskSampling\src\ofxPoissonDiskSampling.h">
+			<Filter>addons\ofxPoissonDiskSampling\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\addons\ofxPoissonDiskSampling\libs\poissondisksampling\include\bluenoise.h">
+			<Filter>addons\ofxPoissonDiskSampling\libs\poissondisksampling\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\addons\ofxPoissonDiskSampling\libs\poissondisksampling\include\necessaryLib.h">
+			<Filter>addons\ofxPoissonDiskSampling\libs\poissondisksampling\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\addons\ofxPoissonDiskSampling\libs\poissondisksampling\include\nutil.h">
+			<Filter>addons\ofxPoissonDiskSampling\libs\poissondisksampling\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\addons\ofxPoissonDiskSampling\libs\poissondisksampling\include\vec.h">
+			<Filter>addons\ofxPoissonDiskSampling\libs\poissondisksampling\include</Filter>
 		</ClInclude>
 	</ItemGroup>
 	<ItemGroup>

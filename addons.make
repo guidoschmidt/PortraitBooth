@@ -1,3 +1,5 @@
 ofxDatGui
 ofxDlib
+ofxOilPaint
 ofxOpenCv
+ofxPoissonDiskSampling
