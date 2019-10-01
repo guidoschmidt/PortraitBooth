@@ -81,3 +81,7 @@ Desktop.ini
 
 # dlib .dat files
 *.dat
+
+# gallery
+/bin/data/gallery/
+
